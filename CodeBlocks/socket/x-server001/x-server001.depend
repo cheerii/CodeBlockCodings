@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1480757693 source:/home/db/Documents/_playground_albert_debian_t460p/socket/x-server001/main.c
+	<stdio.h>
+	<errno.h>
+	<sys/socket.h>
+	<resolv.h>
+	<arpa/inet.h>
+	<errno.h>
+
+1481035160 source:/home/db/Documents/_playground_albert_debian_t460p/Code-Blocks/socket/x-server001/main.c
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<errno.h>
+	<string.h>
+	<sys/types.h>
+

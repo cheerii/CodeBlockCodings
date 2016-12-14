@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1481029958 source:/home/db/Documents/_playground_albert_debian_t460p/Code-Blocks/systemproggen/my001-read-write/main.c
+	<stdio.h>
+	<stdlib.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<unistd.h>
+	<stdio.h>
+	<stdlib.h>
+	<fcntl.h>
+	<errno.h>
+	<sys/types.h>
+	<unistd.h>
+	<stdio.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<unistd.h>
+

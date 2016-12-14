@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Debug" />
+	<File name="main.c" open="1" top="0" tabpos="1" split="1" active="1" splitpos="517" zoom_1="2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1602" topLine="68" />
+			<Cursor2 position="2685" topLine="130" />
+		</Cursor>
+	</File>
+	<EditorTabsLayout layout="0d793198584d3c3300250a9d00000002=0;0004-test-implement-add-function-dynamic-fischer:main.c@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=653;besth=439;minw=653;minh=439;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=0d793198584d3c3300250a9d00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+</CodeBlocks_layout_file>

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1481499104 source:/root/Documents/_playground/_playground_marlice2-debian-8.6-32b/CodeBlocks/_myTests/0002-linked-lists-static-object-creation-mytests/main.c
+	<stdio.h>
+	<stdlib.h>
+

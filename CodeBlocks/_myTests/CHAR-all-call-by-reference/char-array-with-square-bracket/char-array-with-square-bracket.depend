@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1481218659 source:/home/db/Documents/_playground/_playground_albert_debian_t460p/Code-Blocks/_myTESTs/CHAR-all-call-by-reference/char-array-with-square-bracket/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

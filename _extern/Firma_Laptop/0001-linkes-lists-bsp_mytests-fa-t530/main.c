@@ -1,0 +1,135 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include <unistd.h>
+
+struct node
+{
+        int data;
+        struct node *next;
+}node1;
+
+int main()
+{
+        struct node *tmp2 = (struct node1 *) malloc(sizeof(node1));
+        struct node *start = (struct node1 *) malloc(sizeof(node1));
+        //struct node *tmp = (struct node1 *) malloc(sizeof(node1));;// = (struct node1 *)malloc(sizeof(node1));
+//        tmp->data=NULL;
+//        tmp->next=NULL;
+
+        //printf("sizeof start: %d", sizeof(start));
+        //temp = start;
+
+        start->next = NULL;
+        while(1)
+        {
+                int query;
+                printf("\n\n1.Insert\n");
+                printf("2.Print\n");
+                printf("3.QUIT\n");
+                printf("Enter your choice:\n");
+                scanf("%d",&query);
+                if(query==1)
+                {
+                        int data;
+                        printf("Enter the element to be inserted.\n");
+                        scanf("%d",&data);
+
+                        struct node *zwisch = (struct node1 *)malloc(sizeof(node1));
+                        struct node *tmp = (struct node1 *)malloc(sizeof(node1));
+                        tmp->data = data;
+                        tmp->next=NULL;
+
+
+//                        printf("start->next %x\n\n", start->next);
+//                        printf("zwisch %d\n\n", zwisch);
+//                        printf("zwisch->data %d\n\n", zwisch->data);
+//                        printf("zwisch->next %x\n\n", zwisch->next);
+
+                        if(start->next == NULL){
+
+                            printf("Entering if\n\n");
+                            start->next = tmp; //die neue speicheradresse von malloc fuer temp wird in start gespeichert
+//                            printf("start->next %x\n\n", start->next);
+
+                        printf("start->next %x\n\n", start->next);
+                        printf("tmp OBJEKT %d\n\n", tmp);
+                        printf("tmp->next %x\n\n", tmp->next);
+
+                        } else {
+
+                        printf("Entering ELSE IF\n\n");
+
+                        struct node *tmp3zwisch = (struct node1 *) malloc(sizeof(node1));
+                        struct node *tmp = (struct node1 *) malloc(sizeof(node1)); //es muss hier definiert sein, denn es braucht immer eine andere Speicheradresse, wenn ich es global configuriere, dann wurde es immer die gleiche haben
+                        tmp->data=NULL;
+                        tmp->next=NULL;
+
+                        if((start->next->next) == NULL ){
+
+                            printf("you are in IF - zwisch = tmp\n\n");
+
+                            start->next->next=tmp;
+                            printf("zwisch ist jetzt %d\n\n", start->next->next);
+
+                        }
+
+                        tmp->data=data;
+
+                        tmp2=start;
+                        printf("start->1 %d\n\n", start->next);
+                        printf("start->2 zwisch %d\n\n", start->next->next);
+                        //printf("start->3 %d\n\n", start->next->next->next);
+
+//                        printf("tmp %x\n\n", tmp);
+//
+                        printf("start->next %x\n\n", start->next);
+//                        printf("zwisch %x\n\n", zwisch);
+//                        printf("zwisch->data %d\n\n", zwisch->data);
+//                        printf("zwisch->next %x\n\n", zwisch->next);
+
+                        while(tmp2->next != NULL)
+                        {
+                                printf("WHILE %d\n\n", tmp2->data);
+                                sleep(2);
+                                tmp2=tmp2->next; //Die Adresse vom aktuellen Objekt (start->next) wird in start gespeichert
+                                //temp1=temp1->next;
+                                ;
+                        }
+
+//                        temp1tmp->next=temp11;
+                        tmp->next=tmp2;
+
+//                        printf("\n=============\n");
+//                        printf("\nstart %d\n", start);
+//                        printf("\nstart->next %d\n", start->next);
+//                        printf("\ntmp %d\n", tmp);
+//                        printf("\ntmp->next %d\n", tmp->next);
+
+                            printf("\nSpeicheradressen der erzeugten Objekte sind %d\n", tmp);
+                            printf("\ntmp->next %d\n", tmp->next);
+
+                        }
+
+
+                }
+                else if(query == 2)
+                {
+                        printf("The list is as below:\n");
+                        struct node *temp002;
+                        temp002=start;
+                        while(temp002 != NULL)
+                        {
+                                printf("%d",temp002->data);
+                                temp002=temp002->next;
+                        }
+                }
+                else if(query ==3){
+
+                    exit(1);
+                }
+                else
+                break;
+        }
+
+        return 0;
+}

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1481304309 source:/home/db/Documents/_playground/_playground_marlice-debian-8.6-32b/CodeBlocks/_fischer/test003-fischer-test/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

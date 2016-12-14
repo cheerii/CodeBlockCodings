@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1481227746 source:/home/db/Documents/_playground/_playground_albert_debian_t460p/Code-Blocks/_fischer/test002-fischer/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

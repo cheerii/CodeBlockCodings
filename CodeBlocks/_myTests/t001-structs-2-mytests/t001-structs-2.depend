@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1481381626 source:/home/db/Documents/_playground/_playground_marlice-debian-8.6-32b/CodeBlocks/_myTests/t001-structs-2-mytests/main.c
+	<stdio.h>
+	<string.h>
+

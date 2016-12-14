@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1481672560 source:/root/Documents/_playground/_playground_marlice2-debian-8.6-32b/CodeBlocks/_myTests/0004-linked-lists-new-objects-while-and-while-printing/main.c
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+

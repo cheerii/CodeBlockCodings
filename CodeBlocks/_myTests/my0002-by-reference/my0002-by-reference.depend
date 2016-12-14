@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1481219030 source:/home/db/Documents/_playground/_playground_albert_debian_t460p/Code-Blocks/_myTESTs/my0002-by-reference/main.c
+	<stdio.h>
+	<stdlib.h>
+

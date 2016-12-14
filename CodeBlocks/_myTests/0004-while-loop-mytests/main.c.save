@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/** \brief
+ *
+ * \
+ * \ WORK with WHILE LOOP
+ * \
+ *
+ */
+
+
+int main()
+{
+    printf("Hello world!\n");
+
+    int i = 0;
+
+    while(i != 5){
+
+        printf("ich bin ein text\n");
+        i++;
+
+    }
+
+    return 0;
+}

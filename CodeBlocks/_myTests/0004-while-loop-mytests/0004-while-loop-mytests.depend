@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1481413879 source:/home/db/Documents/_playground/_playground_marlice-debian-8.6-32b/CodeBlocks/_myTests/0004-while-loop-mytests/main.c
+	<stdio.h>
+	<stdlib.h>
+

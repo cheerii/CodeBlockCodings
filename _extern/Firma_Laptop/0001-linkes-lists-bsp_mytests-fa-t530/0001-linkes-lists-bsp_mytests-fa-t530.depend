@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1481655161 source:/root/Documents/_playground/_extern/Firma_Laptop/0001-linkes-lists-bsp_mytests-fa-t530/main.c
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+

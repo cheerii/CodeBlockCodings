@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1481207468 source:/home/db/Documents/_playground/_playground_albert_debian_t460p/Code-Blocks/_fischer/thomas/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1481182268 source:/home/db/Documents/_playground/_playground_marlice-debian-8.6-32b/CodeBlocks/_fischer/thomas/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

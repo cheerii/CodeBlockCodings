@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1480788425 source:/home/db/Documents/_playground_albert_debian_t460p/Code-Blocks/ply-fetch-website-response/main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio.h>
+	<errno.h>
+	<sys/socket.h>
+	<resolv.h>
+	<arpa/inet.h>
+	<errno.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+

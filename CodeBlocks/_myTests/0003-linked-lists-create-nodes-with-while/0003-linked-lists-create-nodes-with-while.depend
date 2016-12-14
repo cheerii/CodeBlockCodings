@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1481671252 source:/root/Documents/_playground/_playground_marlice2-debian-8.6-32b/CodeBlocks/_myTests/0003-linked-lists-create-nodes-with-while/main.c
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+

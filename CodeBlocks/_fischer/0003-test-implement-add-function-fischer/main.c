@@ -1,0 +1,141 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+/** \brief
+ *
+ * \
+ * \ title: 0003-test-implement-add-function-fischer
+ * \ static implementation of linked list
+ * \
+ * \
+ * \
+ *
+ */
+
+typedef struct persondb
+{
+
+    char name[32];
+    unsigned age;
+    struct persondb *next;
+
+
+}persondb_t;
+
+
+void pdb_init(persondb_t *pdb)
+{
+
+    bzero(pdb->name, 32);
+    pdb->age = 0;
+    pdb->next = NULL;
+
+}
+
+
+int pdb_add_person(persondb_t *pdb, const char *name, unsigned age)
+{
+
+
+    struct persondb *tmpN = (struct persondb_t *) malloc(sizeof(persondb_t)); //First use Struct-Name "persondb" and then user Object of Struct
+    pdb->next = tmpN;
+
+    strcpy(tmpN->name, name);
+    tmpN->age = age;
+
+    struct persondb *tmpN2 = (struct persondb_t *) malloc(sizeof(persondb_t));
+    tmpN->next = tmpN2;
+    strcpy(tmpN2->name, "LisaWrong");
+
+    struct persondb *tmpN3 = (struct persondb_t *) malloc(sizeof(persondb_t));
+    tmpN2->next = tmpN3;
+    strcpy(tmpN3->name, "Nutschel");
+    tmpN3->next=NULL;
+
+
+    printf("pdb_add_person:: Erstes erstelltes Struct-objekt pdb.next.name = Name %s \n\n", tmpN->name);
+
+//    printf("pdb_add:: tmpN Address is =  %d \n\n", tmpN);
+    printf("pdb_add:: Struct pdb hat folgende Werte pdb->name, pdb->age, pdb->next = Name %s Age %d und NEXT-Addr = %d \n\n", pdb->name, pdb->age, pdb->next);
+
+    printf("-------pdb_add_person:: Erstes erstelltes Struct-objekt pdb->next->next->name) = Name %s \n\n", pdb->next->next->next->name);
+
+
+
+            while (pdb->next != NULL){
+
+
+            pdb = pdb->next;
+            printf("\n\n---WHILE add:: Name ist %s\n\n", pdb->name);
+
+        }
+
+}
+
+
+int pdb_youngest_person(persondb_t *pdb, char *name, unsigned *age)
+{
+
+        printf("youngest:: Erstes erstelltes Struct-objekt pdb->next->name = Name %s \n\n", pdb->next->name);
+        printf("youngest:: Erstes erstelltes Struct-objekt pdb->next->next->name = Name %s \n\n", pdb->next->next->name);
+
+}
+
+
+void pdb_free_all(persondb_t *pdb)
+{
+}
+
+
+void pdb_print_person(const char *name, unsigned age)
+{
+    printf("%s, %d\n", name, age);
+
+}
+
+
+int main(int argc, char **argv)
+{
+
+
+    persondb_t pdb;
+
+
+//    printf("Struct size persondb_t = %d\n\n", sizeof(persondb_t));
+//    printf("Struct size pdb = %d\n\n", sizeof(pdb));
+
+    //pdb_init(&pdb);
+
+   char name[32];
+   unsigned age;
+
+   //pdb_init(&pdb);
+   pdb_add_person(&pdb, "Rasten Hound", 10);
+   //pdb_add_person(&pdb, "Lisa Liquid", 23);
+
+
+
+
+
+   printf("main:: Struct pdb hat folgende Werte = Name %s Age %d und NEXT-Addr = %d \n\n", pdb.name, pdb.age, pdb.next);
+
+
+   pdb_youngest_person(&pdb, name, &age);
+
+//   printf("\n\nmain:: Erstes erstelltes Struct-objekt = Name %s \n\n", pdb.next->age);
+//   printf("main:: Erstes erstelltes Struct-objekt pdb->next->next->name = Name %s \n\n", pdb.next->next->name);
+
+//   pdb_add_person(&pdb, "Jenny Penny", 39);
+//   pdb_youngest_person(&pdb, name, &age);
+//   pdb_print_person(name, age);
+//   pdb_youngest_person(&pdb, name, &age);
+//   pdb_print_person(name, age);
+//   pdb_add_person(&pdb, "Ron River", 27);
+//   pdb_youngest_person(&pdb, name, &age);
+//   pdb_youngest_person(&pdb, name, &age);
+//   pdb_print_person(name, age);
+//   pdb_free_all(&pdb);
+
+   return 0;
+}

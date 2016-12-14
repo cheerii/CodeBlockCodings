@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1481450232 source:/home/db/Documents/_playground/_playground_marlice-debian-8.6-32b/CodeBlocks/_fischer/0004-test-implement-add-function-dynamic-fischer/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
