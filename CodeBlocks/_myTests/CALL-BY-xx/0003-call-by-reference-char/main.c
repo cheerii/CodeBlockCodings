@@ -39,16 +39,17 @@ someFunction(char* s){
    printf("Address of s = %d\n", &s);
    printf("*(&s) = %d\n", *(&s));
    printf("*(&s) oder einfach nur (s) = %d\n", s);
-   *s = "changed";
+   s = "changed";
 
-int retval = (strncmp(s, "changed", 1000))
-printf("retval %d", retval);
+    int v = strcmp(s, "changed");
 
-   if(strcmp((*s), "changed")){
-         printf("wuhuuu\n");
+    if (v < 0)
+        printf("'%s' is less than\n"); // '%s'.\n", s);
+    else if (v == 0)
+        printf("'%s' equals\n"); // '%s'.\n", s);
+    else if (v > 0)
+        printf("'%s' is greater than\n"); //'%s'.\n", s);
 
-   } else {
-         printf("not wuhuu\n");
-   }
+    return 0;
 
 }

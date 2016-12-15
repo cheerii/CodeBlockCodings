@@ -41,13 +41,16 @@ someFunction(char* s){
    printf("*(&s) oder einfach nur (s) = %d\n", s);
    *s = "changed";
 
-int retval = (strncmp(*s, "changed"))
+    int v = strcmp(s, "changed");
 
-   if(strcmp((*s), "changed")){
-         printf("wuhuuu\n");
+    if (v < 0)
+        printf("'%s' is less than '%s'.\n", s);
+    else if (v == 0)
+        printf("'%s' equals '%s'.\n", s);
+        printf("'%s' equals '%s'.\n", s);
+    else if (v > 0)
+        printf("'%s' is greater than '%s'.\n", str1, str2);
 
-   } else {
-         printf("not wuhuu\n");
-   }
+    return 0;
 
 }
