@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1481760920 source:/root/Documents/_playground/_playground_marlice2-debian-8.6-32b/CodeBlocks/_myTests/CALL-BY-xx/0003-call-by-reference-char/main.c
+	<stdlib.h>
+	<stdio.h>
+
